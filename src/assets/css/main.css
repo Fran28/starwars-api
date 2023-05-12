@@ -1,0 +1,223 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.page-title{
+    margin-top: 0;
+}
+
+.title{
+    text-align: center;
+}
+
+.logo{
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.loading{
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fade-in{
+    -moz-animation: fade-in 1.5s linear;
+    -ms-animation: fade-in 1.5s linear;
+    -o-animation: fade-in 1.5s linear;
+    -webkit-animation: fade-in 1.5s linear;
+    animation: fade-in 1.5s linear;
+}
+
+@keyframes fade-in {
+    from {
+          opacity: 0;
+          transform: scale(1.5);
+      }
+      to { 
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+
+
+
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+@-webkit-keyframes move-background {
+from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+  
+@-moz-keyframes move-background {    
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+  
+@-webkit-keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to { 
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      -moz-animation:move-background 70s linear infinite;
+    -ms-animation:move-background 70s linear infinite;
+    -o-animation:move-background 70s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 70s linear infinite;
+  }
+  
+
+
+  .list-container{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+  }
+  .list {
+    padding: 0;
+  }
+
+  .list-element{
+    list-style: none;
+    border: 2px solid #ffe81f;
+    border-radius: 10px;
+    padding: 0px 20px;
+    transition: 300ms ease;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list-element:hover{
+    transform: scale(0.98);
+    transition: 300ms ease;
+  }
+
+  .list-element + .list-element {
+    margin-top: 15px;
+  }
+
+  .list-element .link{
+    border: 2px solid transparent;
+    border-radius: 100%;
+    padding: 15px;
+    transition: 300ms linear;
+
+  }
+
+  .list-element .link:hover{
+    border: 2px solid #ffe81f;
+    box-shadow: 0px 0px 10px #ffe81f;
+    transition: 300ms linear;
+  }
+
+  .link img {
+    fill: yellow;
+    color: yellow;
+    width: 50px;
+    margin-left: 8px;
+}
+
+.more-button{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.golden-button {
+    background: transparent;
+    color: #ffe81f;
+    font-family: inherit;
+    padding: 5px 15px;
+    border: 2px solid #ffe81f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 300ms linear;
+}
+
+.golden-button:hover{
+    box-shadow: inset 0px 0px 20px #ffffff59;
+    transition: 300ms linear;
+}
+
+.more-button{
+    margin-bottom: 15px;
+}
+
+.character-container{
+    position: relative;
+    border: 2px solid #ffe81f;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 0 15px;
+}
+
+.return-button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: -2px;
+}
+
+.film-list{
+    display: block;
+    padding: 0;
+}
+.film-list > li{
+    list-style: none;
+}
